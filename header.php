@@ -62,6 +62,9 @@ include "Session.php";
                                 <div class="pulse-button-close trigg"><span><i class="fa fa-times" aria-hidden="true"></i></span></div>
                                 <form id="formEnv" class="form" method="post" action="addEvnelope.php">
                                     <h3>Добавить конверт</h3>
+                                    <?php
+                                    echo "<input type='text' name='login' value='".$_SESSION['login']."' hidden>";
+                                    ?>
                                     <input id="nameEnvelope" type="text" name="nameEnvelope" placeholder="название">
                                     <input id="bEnvelope" type="text" name="BudgetEnvelope" placeholder="бюджет">
                                     <button type="submit" name="addenvelope">Сохранить</button>
